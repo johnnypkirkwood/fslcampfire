@@ -1,8 +1,8 @@
 {
-  "orgName": "workshops",
-  "adminEmail": "shane@mailinator.com",
-  "description": "cpq",
-  "template": "0TT1U000009WwnP",
+  "orgName": "FSL Campfire",
+  "adminEmail": "tyler@mailinator.com",
+  "description": "fsl campfire",
+  "template": "0TT6g00000AD0Z6",
   "settings": {
     "lightningExperienceSettings": {
       "enableS1DesktopEnabled": true
