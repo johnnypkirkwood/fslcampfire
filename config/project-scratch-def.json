@@ -11,7 +11,7 @@
       "passwordPolicies": {
         "enableSetPasswordInApi": true
       }
-    "FieldServiceSettings":{
+    "FieldServiceSettings": {
       "fieldServiceOrgPref": true
       }
     }
