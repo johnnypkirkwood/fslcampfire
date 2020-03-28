@@ -7,8 +7,10 @@ sfdx force:user:permset:assign -n FSL_Dispatcher_License
 sfdx force:user:permset:assign -n FSL_Admin_Permissions
 sfdx force:user:permset:assign -n FSL_Dispatcher_Permissions
 sfdx force:apex:execute
->> FieldServiceMobileSettings FSMS = [Select Id from FieldServiceMobileSettings where DeveloperName = 'Field_Service_Mobile_Settings'];
-    FSMS.IsTimeSheetEnabled = TRUE;
-    update FSMS;
+>> public Flow.Interview.UpdateFSMS myFlow {get; set;}
+    public void start() {
+        Flow.Interview.UpdateFSMS myFlow;
+        myFlow.start();     
+}
     >>sfdx force:user:password:generate
 sfdx force:org:open -p /lightning/page/home
