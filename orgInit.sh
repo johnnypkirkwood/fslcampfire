@@ -7,7 +7,7 @@ sfdx force:user:permset:assign -n FSL_Dispatcher_License
 sfdx force:user:permset:assign -n FSL_Admin_Permissions
 sfdx force:user:permset:assign -n FSL_Dispatcher_Permissions
 sfdx force:apex:execute
->>public Flow.Interview.UpdateFSMS myFlow {get; set;}
+>>public Flow.Interview.UpdateFSMS myFlow {get;set;}
     public void start() {
         Flow.Interview.UpdateFSMS myFlow;
         myFlow.start();     
