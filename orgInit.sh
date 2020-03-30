@@ -3,7 +3,11 @@ sfdx force:source:retrieve -m PermissionSet:FSL_Admin_Permissions
 sfdx force:source:retrieve -m PermissionSet:FSL_Dispatcher_Permissions
 sfdx force:org:create -f config/project-scratch-def.json -d 30 -s -w 60
 sfdx force:source:push
-sfdx force:user:permset:assign -n FSL_Dispatcher_License
+sfdx force:apex:execute >> public Flow.Interview.UpdateFSMS myFlow {get; set;}
+    public void start() {
+        Flow.Interview.UpdateFSMS myFlow;
+        myFlow.start();     
+}>>sfdx force:user:permset:assign -n FSL_Dispatcher_License
 sfdx force:user:permset:assign -n FSL_Admin_Permissions
 sfdx force:user:permset:assign -n FSL_Dispatcher_Permissions
 sfdx force:user:password:generate
