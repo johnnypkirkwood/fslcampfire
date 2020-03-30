@@ -7,5 +7,5 @@ sfdx force:user:permset:assign -n FSL_Dispatcher_License
 sfdx force:user:permset:assign -n FSL_Admin_Permissions
 sfdx force:user:permset:assign -n FSL_Dispatcher_Permissions
 sfdx force:user:password:generate
-sfdx force:data:record:update -s User -w "Name='User User'" -v "TimeZoneSidKey='America/New_York'"
+sfdx force:data:record:update -s User -w "Name='User User'" -v "TimeZoneSidKey=America/New_York"
 sfdx force:org:open -p /lightning/page/home
