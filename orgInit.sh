@@ -9,4 +9,5 @@ sfdx force:user:permset:assign -n FSL_Dispatcher_Permissions
 sfdx force:user:password:generate
 sfdx force:apex:execute -f SetupScripting/TimeZoneScript.cls
 sfdx force:apex:execute -f SetupScripting/EnableTimeSheets.cls
+sfdx force:apex:execute -f SetupScripting/UpdateData.cls
 sfdx force:org:open -p /lightning/page/home
