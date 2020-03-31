@@ -1,5 +1,3 @@
-public Flow.Interview.UpdateFSMS myFlow {get; set;}
-    public void start() {
-        Flow.Interview.UpdateFSMS myFlow;
-        myFlow.start();     
-}
+Map<String,Object> nonsense = new Map<String,Object>();
+Flow.Interview.UpdateFSMS myFlow = new Flow.Interview.UpdateFSMS(nonsense);
+myFlow.start();
