@@ -6,6 +6,12 @@ sfdx force:source:push
 sfdx force:user:permset:assign -n FSL_Dispatcher_License
 sfdx force:user:permset:assign -n FSL_Admin_Permissions
 sfdx force:user:permset:assign -n FSL_Dispatcher_Permissions
+sfdx force:user:permset:assign -n FSLAdmin2
+sfdx force:user:permset:assign -n FSLAgent2
+sfdx force:user:permset:assign -n FSLMobileLicense2
+sfdx force:user:permset:assign -n FSLResourceLicense2
+sfdx force:user:permset:assign -n FSLResourcePerms2
+sfdx force:user:permset:assign -n FSLSelfService2
 sfdx force:user:password:generate
 sfdx force:apex:execute -f SetupScripting/TimeZoneScript.cls
 sfdx force:apex:execute -f SetupScripting/EnableTimeSheets.cls
