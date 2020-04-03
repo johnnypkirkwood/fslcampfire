@@ -9,6 +9,3 @@ List<ServiceResource> srList = [SELECT Id, LastKnownLatitude, LastKnownLongitude
        
         update srList;
 
-UpdateLKL job = new UpdateLKL();
-String sch = '0 0 * * * ?';
-System.schedule('Update Location Once an Hour', sch, job);
