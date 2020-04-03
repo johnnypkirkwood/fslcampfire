@@ -22,4 +22,5 @@ sfdx force:user:password:generate
 sfdx force:apex:execute -f SetupScripting/TimeZoneScript.cls
 sfdx force:apex:execute -f SetupScripting/EnableTimeSheets.cls
 sfdx force:apex:execute -f SetupScripting/UpdateData.cls
+sfdx force:apex:execute -f SetupScripting/LKLCron.cls
 sfdx force:org:open -p /lightning/page/home
