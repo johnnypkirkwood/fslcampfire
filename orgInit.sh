@@ -1,4 +1,5 @@
 sfdx force:org:create -f config/project-scratch-def.json -d 30 -s -w 60
+sfdx force:package:version:update -p 04t3y000001IWr3
 sfdx force:source:push
 sfdx force:user:password:generate
 sfdx force:apex:execute -f SetupScripting/TimeZoneScript.cls
