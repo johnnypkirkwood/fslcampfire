@@ -1,3 +1,3 @@
 Map<String,Object> nonsense = new Map<String,Object>();
-Flow.Interview.Campfire_Data_Reset_Autolaunched myFlow = new Flow.Interview.Campfire_Data_Reset_Autolaunched(nonsense);
+Flow.Interview.Data_Reset myFlow = new Flow.Interview.Data_Reset(nonsense);
 myFlow.start();
