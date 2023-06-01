@@ -5,4 +5,4 @@ sfdx force:org:open -p /lightning/setup/FieldServiceSettings/home
 sfdx force:apex:execute -f SetupScripting/UpdateData.cls
 
 
-hello6
+hello7
