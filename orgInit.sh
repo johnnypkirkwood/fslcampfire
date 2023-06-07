@@ -3,4 +3,3 @@ sfdx force:source:push
 sfdx force:user:password:generate
 sfdx force:org:open -p /lightning/setup/FieldServiceSettings/home
 
-WeekendUpdate2
