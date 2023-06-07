@@ -5,14 +5,12 @@ on:
         branches:
             - master
     schedule:
-        -
-            cron: '*/31 1 * * 5'
+        - cron: '*/31 1 * * 0'
 jobs:
     production:
         runs-on: ubuntu-latest
         name: production deployer end-to-end test
         steps:
-            -
-                name: production
-                id: production
-                uses: mshanemc/deployer-check-javascript-action@master
+            - name: production
+              id: production
+              uses: mshanemc/deployer-check-javascript-action@master
